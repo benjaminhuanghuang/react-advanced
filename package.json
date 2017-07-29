@@ -1,0 +1,13 @@
+{
+  "name": "react-advanced",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "repository": "https://github.com/benjaminhuanghuang/react-advanced.git",
+  "author": "Benjamin Huang <benjaminhuanghuang@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-plugin-react": "^7.1.0"
+  }
+}
