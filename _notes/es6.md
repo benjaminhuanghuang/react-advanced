@@ -10,5 +10,5 @@
 
 ## Add interpreter to npm script
   "scripts": {
-    "dev": "pm2 start server/server.js --watch --interpreter babel-node"
+    "dev": "pm2 start server.js --watch --interpreter babel-node"
   },

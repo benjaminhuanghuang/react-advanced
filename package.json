@@ -1,9 +1,12 @@
 {
   "name": "react-advanced",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "main": "lib/server.js",
   "scripts": {
-    "dev": "pm2 start server/server.js --watch --interpreter babel-node"
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "stop": "pm2 stop all",
+    "start": "babel-node lib/server.js",
+    "build": "webpack -wd"
   },
   "repository": "https://github.com/benjaminhuanghuang/react-advanced.git",
   "author": "Benjamin Huang <benjaminhuanghuang@gmail.com>",
@@ -13,15 +16,19 @@
   },
   "devDependencies": {
     "babel-cli": "~6.24.1",
-    "babel-preset-es2015":"~6.24.1",
-    "babel-preset-react":"~6.24.1",
+    "babel-preset-es2015": "~6.24.1",
+    "babel-preset-react": "~6.24.1",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.3.0",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.1.0",
+    "webpack": "~3.4.1",
+    "babel-loader": "~7.1.1"
   },
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.15.3",
-    "pm2": "^2.6.1"
+    "pm2": "^2.6.1",
+    "react": "~15.6.1",
+    "react-dom": "~15.6.1"
   }
 }
