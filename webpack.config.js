@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  entry: './lib/components/index.js',
+  entry: ['babel-polyfill', './lib/components/index.js'],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
@@ -13,7 +13,7 @@ const config = {
       use: {
         loader: 'babel-loader',
         options: {
-          presets: ['react', 'es2015']
+          presets: ['es2015', 'react']
         }
       }
     }]
