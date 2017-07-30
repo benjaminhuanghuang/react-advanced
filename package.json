@@ -7,7 +7,7 @@
     "stop": "pm2 stop all",
     "start": "babel-node lib/server.js",
     "build": "webpack -wd",
-    "test":"jest --watch"
+    "test": "jest --watch"
   },
   "repository": "https://github.com/benjaminhuanghuang/react-advanced.git",
   "author": "Benjamin Huang <benjaminhuanghuang@gmail.com>",
@@ -33,8 +33,9 @@
     "babel-preset-react": "~6.24.1",
     "eslint": "^4.3.0",
     "eslint-plugin-react": "^7.1.0",
-    "webpack": "~3.4.1",
+    "jest": "~20.0.4",
     "pm2": "^2.6.1",
-    "jest":"~20.0.4"
+    "react-test-renderer": "^15.6.1",
+    "webpack": "~3.4.1"
   }
 }
