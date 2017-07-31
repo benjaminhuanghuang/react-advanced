@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "lib/server.js",
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
     "stop": "pm2 stop all",
-    "start": "babel-node lib/server.js",
+    "start": "NODE_PATH=./lib babel-node lib/server.js",
     "build": "webpack -wd",
     "test": "jest --watch"
   },
