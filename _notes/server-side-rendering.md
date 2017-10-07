@@ -13,7 +13,7 @@ Warning: render(): Target node has markup rendered by React, but there are unrel
 ```
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-
+// NODE_PATH=./lib 
 import App from 'components/App';
 
 const serverRender = () => {  

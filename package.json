@@ -7,7 +7,6 @@
     "webpack": "webpack -wd",
     "stop": "pm2 stop all",
     "start": "NODE_PATH=./lib babel-node lib/server.js",
-    "build": "webpack -wd",
     "test": "jest --watch"
   },
   "repository": "https://github.com/benjaminhuanghuang/react-advanced.git",
