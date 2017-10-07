@@ -7,7 +7,7 @@ const config = {
       path.resolve('./node_modules')
     ]
   },
-  entry: ['./lib/renderers/dom.js'],
+  entry: ['./lib/renderers/client.js'],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
