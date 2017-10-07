@@ -15,9 +15,8 @@
   "babel": {
     "presets": [
       "react",
-      "env",
-      "stage-2",
-      "es2015"
+      "es2015",
+      "stage-2"
     ]
   },
   "dependencies": {
